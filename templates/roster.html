@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block contents %}
+<h2>Roster</h2>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Sober Streak</th>
+			<th>Awards</th>
+			<th>At Risk</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for member in members %}
+		<tr>
+			<td><a href="users/{{ member.handle }}.html">{{ member.name }}</a></td>
+			<td>{{ member.sobriety }}</td>
+			<td>{{ member.awards }}</td>
+			<td><input type="checkbox"{{ " checked" if member.atRisk }} disabled></td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+{% endblock %}

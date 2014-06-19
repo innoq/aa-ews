@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>{{ title }}</title>
+	<link rel="stylesheet" href="{{ assetPrefix }}styles/main.css">
+	<link rel="stylesheet" href="{{ assetPrefix }}bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+	<h1><span class="logo">AA</span> Early Warning System</h1>
+	<p class="tagline">protecting citizens' sobriety</p>
+
+	<section id="contents">
+		{% block contents %}{% endblock %}
+	</section>
+
+	<script src="{{ assetPrefix }}bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="{{ assetPrefix }}dist/bundle.js"></script>
+</body>
+
+</html>

@@ -9,6 +9,7 @@
 		"jquery": "global:jQuery"
 	},
 	"devDependencies": {
+		"nunjucks": "~1.0.5",
 		"browserify": "~4.1.11",
 		"browserify-shim": "~3.5.0"
 	}
