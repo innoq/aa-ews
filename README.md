@@ -12,4 +12,7 @@ Getting Started
 ---------------
 
 * install [Node.js](http://nodejs.org) and [Bower](http://bower.io)
-* `bower install` downloads third-party components
+* `npm install` and `bower install` downloads third-party components
+* `make dist` generates the application bundle
+* a simple web server (e.g. [servedir](https://github.com/remy/servedir)) is
+  required to serve contents via HTTP
