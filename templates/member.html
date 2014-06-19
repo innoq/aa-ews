@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block contents %}
+<article class="h-card">
+	<h2 class="fn">{{ member.name }}</h2>
+	<img src="{{ member.handle }}.png" alt="{{ member.name }}" class="u-photo">
+	<dl>
+		<dt>Age</dt>
+		<dd>{{ member.age or "unknown" }}</dd>
+		<dt>E-Mail</dt>
+		<dd>
+			<a href="mailto:{{ member.handle }}@example.org" class="u-email">
+				{{ member.handle }}@example.org
+			</a>
+		</dd>
+	</dl>
+</article>
+
+<h3>Sponsor</h3>
+<article class="h-card">
+	<span class="fn">Martin Lessing</span>
+	<img src="ml.png" alt="Martin Lessing" class="u-photo">
+	<blockquote>better safe than sorry</blockquote>
+</article>
+{% endblock %}

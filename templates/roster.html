@@ -14,7 +14,7 @@
 	<tbody>
 		{% for member in members %}
 		<tr>
-			<td><a href="users/{{ member.handle }}.html">{{ member.name }}</a></td>
+			<td><a href="{{ member.handle }}.html">{{ member.name }}</a></td>
 			<td>{{ member.sobriety }}</td>
 			<td>{{ member.awards }}</td>
 			<td><input type="checkbox"{{ " checked" if member.atRisk }} disabled></td>

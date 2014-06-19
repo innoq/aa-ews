@@ -10,6 +10,7 @@ var title = "AA EWS";
 var members = [{
 	handle: "jk",
 	name: "Jonathan Koch",
+	age: 28,
 	sobriety: "248 days",
 	awards: "♙"
 }, {
@@ -23,14 +24,15 @@ var members = [{
 	sobriety: "8 years",
 	awards: "♖ ♗ ♙"
 }, {
-	handle: "as",
-	name: "Angela Schumacher",
+	handle: "hs",
+	name: "Hannah Schumacher",
 	sobriety: "2 years",
 	awards: "♗ ♙",
 	atRisk: true
 }, {
-	handle: "ht",
-	name: "Herbert Turner",
+	handle: "hj",
+	name: "Herbert Junger",
+	age: 56,
 	sobriety: "14 years",
 	awards: "♔ ♘ ♙"
 }];
@@ -39,6 +41,14 @@ render("roster.html", "index.html", {
 	assetPrefix: assetPrefix,
 	title: title,
 	members: members
+});
+
+members.forEach(function(member) {
+	render("member.html", member.handle + ".html", {
+		assetPrefix: assetPrefix,
+		title: title,
+		member: member
+	});
 });
 
 function render(template, filename, data) {
