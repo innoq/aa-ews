@@ -1,0 +1,20 @@
+html body {
+	width: 90%;
+	margin: 0 auto;
+}
+
+h1,
+.tagline {
+	display: inline-block;
+}
+
+.tagline {
+	margin-left: 1em;
+}
+
+.logo { /* XXX: magic numbers!? */
+	display: inline-block;
+	border: 2px solid #000;
+	border-radius: 1em;
+	padding: 0.2em;
+}
