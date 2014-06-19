@@ -1,8 +1,16 @@
 {
 	"browser": {
-		"jquery": "./bower_components/jquery/dist/jquery.js"
+		"jquery": "./bower_components/jquery/dist/jquery.js",
+		"pjax": "./bower_components/jquery-pjax/jquery.pjax.js"
+	},
+	"browserify": {
+		"transform": ["browserify-shim"]
+	},
+	"browserify-shim": {
+		"jquery": "jQuery"
 	},
 	"devDependencies": {
-		"browserify": "~4.1.11"
+		"browserify": "~4.1.11",
+		"browserify-shim": "~3.5.0"
 	}
 }
