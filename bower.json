@@ -1,0 +1,6 @@
+{
+	"name": "aa-ews",
+	"dependencies": {
+		"bootstrap": "~3.1.1"
+	}
+}
