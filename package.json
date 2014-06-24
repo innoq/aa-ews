@@ -1,5 +1,6 @@
 {
 	"browser": {
+		"promiscuous": "./bower_components/promiscuous/promiscuous.js",
 		"pjax": "./bower_components/jquery-pjax/jquery.pjax.js"
 	},
 	"browserify": {

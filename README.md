@@ -17,3 +17,15 @@ Getting Started
 * open `resources/index.html` &mdash; note that a simple web server (e.g.
   [servedir](https://github.com/remy/servedir)) is required to serve contents
   via HTTP
+
+
+Image Credits
+-------------
+
+profile images via [lorempixel](http://lorempixel.com)
+
+* http://www.flickr.com/photos/striatic
+* http://www.flickr.com/photos/hamed
+* http://www.flickr.com/photos/neilspicys
+* http://www.flickr.com/photos/visualpanic
+* https://www.flickr.com/photos/echascetch/2494952826

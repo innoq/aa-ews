@@ -3,6 +3,10 @@ html body {
 	margin: 0 auto;
 }
 
+html dd {
+	margin-left: 0.5em;
+}
+
 h1,
 .tagline {
 	display: inline-block;
@@ -14,7 +18,23 @@ h1,
 
 .logo { /* XXX: magic numbers!? */
 	display: inline-block;
-	border: 2px solid #000;
+	border: 2px dashed #666;
 	border-radius: 1em;
 	padding: 0.2em;
+}
+
+.h-card .p-nickname {
+	display: none;
+}
+
+.h-card .p-name {
+	line-height: 64px; /* corresponds to avatar size */
+}
+
+.h-card img.u-photo {
+	display: block;
+	float: left;
+	width: 64px;
+	height: 64px;
+	margin-right: 0.5em;
 }

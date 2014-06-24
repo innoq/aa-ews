@@ -2,8 +2,8 @@
 
 {% block contents %}
 <article class="h-card">
-	<h2 class="fn">{{ member.name }}</h2>
-	<img src="{{ member.handle }}.png" alt="{{ member.name }}" class="u-photo">
+	<h2 class="p-name">{{ member.name }}</h2>
+	<p class="p-nickname">{{ member.handle }}</p>
 	<dl>
 		<dt>Age</dt>
 		<dd>{{ member.age or "unknown" }}</dd>
@@ -18,8 +18,8 @@
 
 <h3>Sponsor</h3>
 <article class="h-card">
-	<span class="fn">Martin Lessing</span>
-	<img src="ml.png" alt="Martin Lessing" class="u-photo">
+	<p class="p-name">Martin Lessing</p>
+	<p class="p-nickname">ml</p>
 	<blockquote>willingness is the key</blockquote>
 </article>
 {% endblock %}
