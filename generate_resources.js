@@ -8,47 +8,45 @@ var assetPrefix = "../"; // XXX: hard-coded
 
 var title = "AA EWS";
 var members = [{
-	handle: "jk",
 	name: "Jonathan Koch",
 	age: 28,
 	sobriety: "248 days",
 	awards: "♙"
 }, {
-	handle: "me",
 	name: "Marc Emmerich",
 	sobriety: "12 days",
 	atRisk: true
 }, {
-	handle: "pw",
 	name: "Peter Weiland",
 	sobriety: "8 years",
 	awards: "♖ ♗ ♙"
 }, {
-	handle: "hs",
 	name: "Hannah Schumacher",
 	sobriety: "2 years",
 	awards: "♗ ♙",
 	atRisk: true
 }, {
-	handle: "hj",
 	name: "Herbert Junger",
 	age: 56,
 	sobriety: "14 years",
 	awards: "♔ ♘ ♙"
 }];
 
-render("roster.html", "index.html", {
-	assetPrefix: assetPrefix,
-	title: title,
-	members: members
-});
-
 members.forEach(function(member) {
+	member.handle = member.name.split(" ").map(function(name) {
+		return name[0].toLowerCase();
+	}).join("");
 	render("member.html", member.handle + ".html", {
 		assetPrefix: assetPrefix,
 		title: title,
 		member: member
 	});
+});
+
+render("roster.html", "index.html", {
+	assetPrefix: assetPrefix,
+	title: title,
+	members: members
 });
 
 function render(template, filename, data) {
