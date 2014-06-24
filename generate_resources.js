@@ -48,6 +48,8 @@ render("roster.html", "index.html", {
 	title: title,
 	members: members
 });
+fs.writeFile([targetDir, "roster.json"].join("/"), JSON.stringify(members),
+		onWrite);
 
 function render(template, filename, data) {
 	var page = nunjucks.render(template, data);

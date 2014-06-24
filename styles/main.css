@@ -23,6 +23,12 @@ h1,
 	padding: 0.2em;
 }
 
+html .controls {
+	display: block;
+	float: right;
+	margin-top: -2.2em; /* XXX: magic number!? */
+}
+
 .h-card .p-nickname {
 	display: none;
 }

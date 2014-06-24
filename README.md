@@ -5,7 +5,8 @@ demo application illustrating
 [modular JavaScript components](http://www.infoq.com/articles/modular-javascript)
 as well as
 [progressive enhancement](https://www.gov.uk/service-manual/making-software/progressive-enhancement)
-and [ROCA](http://roca-style.org) principles
+and [ROCA](http://roca-style.org) principles (NB: also includes some examples of
+how *not* to do it)
 
 
 Getting Started
