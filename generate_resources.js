@@ -1,3 +1,6 @@
+/*jslint vars: true, node: true, white: true */
+"use strict";
+
 var fs = require("fs");
 var nunjucks = require("nunjucks");
 
