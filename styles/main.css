@@ -29,6 +29,10 @@ html .controls {
 	margin-top: -2.2em; /* XXX: magic number!? */
 }
 
+.awards {
+	font-size: 1.5em;
+}
+
 .h-card .p-nickname {
 	display: none;
 }
