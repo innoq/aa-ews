@@ -3,6 +3,33 @@
 {% block contents %}
 <h2>Roster</h2>
 
+<form action="" method="get" class="form-inline form-grouped" role="form">
+	<fieldset class="form-group">
+		<legend>name</legend>
+		<label class="sr-only" for="name">name</label>
+		<input type="text" name="name" id="name" class="form-control" placeholder="e.g. Martin Mayer">
+		<label>
+			<input type="radio" name="name-match" value="0" checked>
+			contains
+		</label>
+		<label>
+			<input type="radio" name="name-match" value="1">
+			exact match
+		</label>
+	</fieldset>
+	<fieldset class="form-group">
+		<legend>age</legend>
+		<select name="age-range" class="form-control">
+			<option>&lt;</option>
+			<option>=</option>
+			<option>&gt;</option>
+		</select>
+		<label class="sr-only" for="age">age</label>
+		<input type="number" name="age" id="age" class="form-control" placeholder="e.g. 28">
+	</fieldset>
+	<input type="submit">
+</form>
+
 <table class="roster table">
 	<thead>
 		<tr>

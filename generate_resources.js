@@ -33,6 +33,11 @@ var members = [{
 	age: 56,
 	sobriety: "14 years",
 	awards: "♔ ♘ ♙"
+}, {
+	name: "Frank Richter",
+	age: 37,
+	sobriety: "6 years",
+	awards: "♘ ♙"
 }];
 
 members.forEach(function(member) {

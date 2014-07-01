@@ -23,6 +23,17 @@ h1,
 	padding: 0.2em;
 }
 
+form.form-grouped .form-group {
+	display: block;
+	margin-bottom: 0.5em;
+}
+
+form.form-grouped legend {
+	float: left;
+	width: 4em; /* XXX: magic number!? */
+	border: none;
+}
+
 html .controls {
 	display: block;
 	float: right;
